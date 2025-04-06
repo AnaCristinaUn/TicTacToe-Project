@@ -1,0 +1,91 @@
+
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-image: url('./background.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.game {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(247, 142, 199);
+}
+
+.game-board {
+  margin-right: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ff979795;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: -1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.square:hover {
+  background-color: #ffe0f0;
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  color: #ffa8cd;
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.game-info button {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.game-info button:hover {
+  background-color: #ffffff;
+}
+
+.winning {
+  background-color: #ffe6f2;
+  border-color: #ff66b3;
+}
+
+@media (max-width: 600px) {
+  .game {
+    flex-direction: column;
+  }
+  
+  .game-board {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
